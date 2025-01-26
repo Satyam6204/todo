@@ -14,7 +14,21 @@ const fun = () => {
         if (count == MAX_VALUE) {
             alert("box is full")
         } else {
+            ////////////////////////////////////
+            let div = document.createElement('div');
+            div.classList.add("div1");
+            const closeText = () => {
+                text2.remove();
+                Cimg.remove();
+                count = 1;
+            }
+            div.addEventListener('click', closeText);
+
+            ////////////////////////////////////
             let text2 = document.createElement("h3");
+            let Cimg = document.createElement("img");
+            Cimg.src = "close-circle-svgrepo-com.svg";
+            Cimg.style.width = "20px";
             text2.style.backgroundColor = "yellow";
             text2.style.borderRadius = "5px"
             text2.style.height = "4vmin"
@@ -22,22 +36,17 @@ const fun = () => {
             text2.style.fontSize = "3vmin"
             text2.style.width = "100%"
             text2.textContent = `${count}. ${text}`;
-            box2.appendChild(text2);
-
+            div.append(text2, Cimg);
+            box2.appendChild(div);
             count++;
+
         }
-
-
     }
     document.querySelector('input').value = '';
 
-
-
-
-
 }
-
-
 const fun1 = () => {
     window.location.reload();
 };
+
+

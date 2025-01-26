@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    cursor: url('./reshot-icon-pointer-VBJ7FA32KP.svg'), auto;
 }
 
 body {
@@ -11,14 +12,15 @@ body {
 header {
     height: 10vh;
     width: 100%;
-    background-color: rgb(255, 106, 0);
+    background-color: #333;
 }
 
 main {
-    height: 70vh;
+    height: 80vh;
     width: 100%;
-    background-color: rosybrown;
+    background-color: rgb(121, 194, 239);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -28,19 +30,21 @@ main {
     height: 60vmin;
     width: 70vmin;
     background-color: seagreen;
-    border-radius: 20px;
+    border-radius: 10px;
     color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
     font-size: 2vmin;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 
 }
 
+
 #box h3 {
     font: bold;
-    font-family: cursive;
+
 }
 
 #box input {
@@ -53,6 +57,7 @@ main {
     border-radius: 10px;
     border: none;
     font-family: 'Courier New', Courier, monospace;
+    cursor: text;
 }
 
 #box button {
@@ -63,6 +68,8 @@ main {
     outline: none;
     border: none;
     background-color: rgb(255, 165, 165);
+    cursor: pointer;
+
 }
 
 #box button:hover {
@@ -73,7 +80,7 @@ main {
 
 #box2 {
     margin-top: 2vmin;
-    height: 30vmin;
+    height:32vmin;
     width: 50vmin;
     background-color: khaki;
     color: black;
@@ -81,11 +88,15 @@ main {
     font-size: 23px;
 
     border-radius: 5px;
-    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.div1 {
+    display: flex;
 }
 
 footer {
-    height: 20vh;
+    height: 10vh;
     width: 100%;
-    background-color: hotpink;
+    background-color: #333;
 }
